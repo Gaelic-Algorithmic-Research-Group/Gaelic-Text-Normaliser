@@ -1,0 +1,612 @@
+Riaghaltas	riaghaltas	Ncsmn
+ùr	ùr	Aq-smn
+SNP	SNP	Nn
+,	,	Fi
+ach	ach	Cc
+gann	gann	Ncsmn
+de	de	Sp
+mhòr-chuid	mhòr-chuid	Ncsfd
+
+# newline
+# newline
+Published	Published	Ncsmn
+
+# newline
+# newline
+o	o	Sp
+chionn	chionn	Nf
+8	8	Mn
+uairean	uair	Ncpfd
+de	de	Sp
+thìde	tìde	Ncsfd
+
+# newline
+# newline
+Mapa	Mapa	Cs
+is	is	Cc
+Nicola	Nicola	Nn
+Sturgeon	Sturgeon	Nn
+
+# newline
+# newline
+'S	'S	Wp-i
+iad	iad	Pp3p
+Pàrtaidh	pàrtaidh	Ncsmn
+Nàiseanta	nàiseanta	Aq-smn
+na	na	Tdsfg
+h-Alba	h-Alba	Ncsfg
+a	a	Q-r
+bhuannaich	buannaich	V-s
+taghadh	taghadh	Ncsmn
+Pàrlamaid	pàrlamaid	Ncsfn
+na	na	Tdsfg
+h-Alba	h-Alba	Nt
+.	.	Fe
+
+# newline
+# newline
+Fhuair	faigh	V-s
+iad	iad	Pp3p
+64	64	Mn
+seat	seat	Sp
+-	-	Fb
+aon	aon	Mc
+gann	gann	Ncsmn
+air	air	Sp
+an	an	Tdsm
+65	65	Ncsmd
+a	a	Q-r
+dh'fheumadh	feum	V-h
+iad	iad	Pp3p
+airson	airson	Nf
+mòr-chuid	mòr-chuid	Ncsfn
+a	a	Ug
+bhith	bith	Nv
+aca	aig + iad	Pr3p
+leotha	le + iad	Pr3p
+fhèin	fhèin	Px
+.	.	Fe
+
+# newline
+# newline
+Thuirt	abair	V-s
+Nicola	Nicola	Nn-mn
+Sturgeon	Sturgeon	Nn
+gur	gur	Wpdia
+e	e	Pp3sm
+"	"	Fz
+toradh	toradh	Ncsmn
+eachdraidheil	eachdraidheil	Aq-smn
+agus	agus	Cc
+sònraichte	sònraich	Av
+"	"	Fz
+a	a	Q-r
+bh'	bi	V-s
+ann	e	Pr3sm
+,	,	Fi
+leis	leis	Sp
+an	an	Tdsm
+SNP	SNP	Nt
+a-niste	a-niste	Rt
+gus	gus	Sp
+riaghaltas	riaghaltas	Ncsmd
+a	a	Ug
+chruthachadh	chruthachadh	Nv
+airson	airson	Nf
+a'	a'	Sa
+cheathramh	cheathramh	Nv
+turas	turas	Ncsmn
+sreath	sreath	Aq-smn
+a	a	Sp
+chèile	chèile	Px
+.	.	Fe
+
+# newline
+# newline
+'S	'S	Wp-i
+iad	iad	Pp3p
+na	na	Tdpm
+Tòraidhean	Tòraidh	Ncpmn
+an	an	Tdsmg
+ath-bhuidhinn	ath-bhuidhinn	Ncsmg
+as	as	Wpr
+motha	mòr	Apc
+sa	sa	Spa-s
+Phàrlamaid	pàrlamaid	Ncsfd
+,	,	Fi
+'s	's	Cc
+iadsan	iad	Pp3p--e
+le	le	Sp
+31	31	Mn
+seat	seat	Xfe
+.	.	Fe
+
+# newline
+# newline
+Fhuair	faigh	V-s
+na	na	Tdpm
+Làbaraich	Làbarach	Ncpmn
+22	22	Mn
+,	,	Fi
+'s	's	Cc
+na	na	Tdpm
+Libearalaich	Libearalach	Ncpmn
+Dheamocratach	deamocratach	Aq-pmn
+ceithir	ceithir	Mc
+.	.	Fe
+
+# newline
+Neo-eisimeileachd	neo-eisimeileachd	Ncsfn
+
+# newline
+# newline
+Tha	bi	V-p
+a-niste	a-niste	Rt
+ge-tà	ge-tà	Rg
+,	,	Fi
+mòr-chuid	mòr-chuid	Ncsfn
+anns	anns	Sp
+a'	a'	Tdsf
+Phàrlamaid	pàrlamaid	Ncsfd
+airson	airson	Nf
+neo-eisimeileachd	neo-eisimeileachd	Ncsfg
+,	,	Fi
+'s	's	Cc
+na	na	Tdpm
+h-Uainich	h-Uainich	Ncpmn
+air	air	Sa
+soirbheachadh	soirbheachadh	Nv
+,	,	Fi
+a'	a'	Sa
+faighinn	faighinn	Nv
+ochdnar	ochdnar	Sp
+bhall	ball	Ncsmd
+-	-	Fb
+triùir	triùir	Ncsfn
+a	a	Sp
+bharrachd	barrachd	Ncsfd
+air	air	Sp
+na	na	Q-r
+bha	bi	V-s
+aca	aig + iad	Pr3p
+sa	sa	Spa-s
+Phàrlamaid	pàrlamaid	Ncsfd
+mu	mu	Sp
+dheireadh	dheireadh	Ncsmd
+.	.	Fe
+
+# newline
+# newline
+Tha	bi	V-p
+72	72	Mn
+bhall	ball	Ncsmn
+a'	a'	Sa
+riochdachadh	riochdachadh	Nv
+phàrtaidhean	pàrtaidh	Ncpmg
+a	a	Q-r
+th'	bi	V-p
+airson	airson	Nf
+neo-eisimeileachd	neo-eisimeileachd	Ncsfg
+,	,	Fi
+le	le	Sp
+57	57	Mn
+a'	a'	Sa
+riochdachadh	riochdachadh	Nv
+phàrtaidhean	pàrtaidh	Ncpmg
+a	a	Q-r
+tha	bi	V-p
+na	na	Tdpm
+h-aghaidh	h-aghaidh	Ncpmn
+.	.	Fe
+
+# newline
+# newline
+Bhòt	bhòt	V-s
+barrachd	barrachd	Ncsfn
+dhaoine	duine	Ncpmg
+na	na	Tdsfg
+bhòt	bhòta	Ncsfg
+riamh	riamh	Rt
+roimhe	ro + e	Pr3sm
+ann	ann	Sp
+an	an	Tdsm
+taghadh	taghadh	Ncsmn
+Albannach	Albannach	Aq-smn
+-	-	Fb
+63.2	63.2	Nn-mn
+%	%	Nn
+dhiubhsan	iad	Pr3p--e
+aig	aig	Sp
+an	an	Qq
+robh	bi	V-s--d
+cead	cead	Ncsmn
+bhòtadh	bhòtadh	Nv
+.	.	Fe
+
+# newline
+# newline
+Ann	Ann	Sp
+am	am	Tdsm
+baileat	baileat	Ncsmn
+nan	nan	Tdpmg
+roinnean-taghaidh	roinn-taghaidh	Ncpmg
+,	,	Fi
+dh'èirich	èirich	V-s
+cuibhreann	cuibhreann	Ncsmn
+an	an	Sp
+SNP	SNP	Nt
+den	den	Spa-s
+bhòt	bhòta	Ncsmd
+-	-	Fb
+suas	suas	Rs
+1.2	1.2	Nn-mn
+%	%	Nn
+air	air	Sp
+na	na	Tdpm
+fhuair	faigh	V-s
+iad	iad	Pp3p
+ann	e	Pr3sm
+an	an	Sp
+taghadh	taghadh	Ncsmd
+2016	2016	Mn
+.	.	Fe
+
+# newline
+# newline
+Thuit	tuit	V-s
+cuibhreann	cuibhreann	Ncsmn
+nan	nan	Tdpmg
+Tòraidhean	Tòraidh	Ncpmg
+-	-	Fb
+sìos	sìos	Rs
+0.1	0.1	Sp
+%	%	Nt
+-	-	Fb
+agus	agus	Cc
+cuibhreann	cuibhreann	Ncsmn
+nan	nan	Tdpmg
+Làbarach	Làbarach	Ncpmg
+-	-	Fb
+sìos	sìos	Rs
+1	1	Mn
+%	%	Nt
+,	,	Fi
+leis	leis	Sp
+na	na	Tdpm
+Lib-Deamaich	Lib-Deamaich	Ncpmn
+a'	a'	Sa
+tuiteam	tuiteam	Nv
+0.9	0.9	Nn-mn
+%	%	Nn
+.	.	Fe
+
+# newline
+# newline
+Dh'èirich	èirich	V-s
+cuibhreann	cuibhreann	Ncsmn
+nan	nan	Tdpmg
+Uaineach	Uaineach	Ncpmg
+,	,	Fi
+'s	's	Cc
+iadsan	iad	Pp3p--e
+suas	suas	Rs
+0.7	0.7	Nn-mn
+%	%	Nn
+.	.	Fe
+
+# newline
+Co-obrachadh	Co-obrachadh	Ncsmn
+
+# newline
+# newline
+'S	'S	Wp-i
+e	e	Pp3sm
+sgeulachd	sgeulachd	Ncsfn
+beagan	beagan	Ncsmn
+eadar-dealaichte	eadar-dealaichte	Aq-smn
+a	a	Q-r
+th'	bi	V-p
+ann	e	Pr3sm
+ge-tà	ge-tà	Rg
+,	,	Fi
+ann	e	Pr3sm
+am	am	Tdsm
+baileat	baileat	Ncsmn
+nan	nan	Tdpmg
+roinnean	roinn	Ncpmg
+-	-	Fb
+am	am	Tdsm
+baileat	baileat	Ncsmn
+far	far	Cs
+an	an	Qq
+taghadh	tagh	V-h--d
+daoine	duine	Ncpmn
+buill	ball	Ncpmn
+eile	eile	Aq-pmn
+'son	'son	Nf
+na	na	Tdpf
+roinnean	roinn	Ncpfn
+aca	aig + iad	Pr3p
+a	a	Ug
+riochdachadh	riochdachadh	Nv
+sa	sa	Spa-s
+Phàrlamaid	pàrlamaid	Ncsfd
+.	.	Fe
+
+# newline
+# newline
+Anns	Anns	Sp
+a'	a'	Tdsm
+bhaileat	bhaileat	Ncsmd
+sin	sin	Dd
+,	,	Fi
+thuit	tuit	V-s
+cuibhreann	cuibhreann	Ncsmn
+an	an	Sp
+SNP	SNP	Nt
+-	-	Fb
+sìos	sìos	Rs
+1.4	1.4	Mn
+%	%	Xy
+-	-	Fb
+leis	leis	Sp
+na	na	Tdpm
+Tòraidhean	Tòraidh	Ncpmn
+suas	suas	Rs
+0.6	0.6	Nn-mn
+%	%	Nn
+.	.	Fe
+
+# newline
+# newline
+Bha	bi	V-s
+na	na	Tdpm
+Làbaraich	Làbarach	Ncpmn
+cuideachd	cuideachd	Rg
+sìos	sìos	Rs
+sa	sa	Spa-s
+bhaileat	bhaileat	Ncsmd
+seo	seo	Dd
+-	-	Fb
+a'	a'	Sa
+tuiteam	tuiteam	Nv
+1.2	1.2	Nn-mn
+%	%	Nn
+,	,	Fi
+a	a	Ug
+thuilleadh	thuilleadh	Nv
+air	air	Sp
+na	na	Tdpm
+Lib-Deamaich	Lib-Deamaich	Ncpmd
+,	,	Fi
+sìos	sìos	Rs
+0.1	0.1	Sp
+%	%	Nt
+.	.	Fe
+
+# newline
+# newline
+Dh'èirich	èirich	V-s
+ge-tà	ge-tà	Rg
+,	,	Fi
+cuibhreann	cuibhreann	Ncsmn
+nan	nan	Tdpmg
+Uaineach	Uaineach	Ncpmg
+-	-	Fb
+suas	suas	Rs
+1.5	1.5	Nn-mn
+%	%	Nn
+.	.	Fe
+
+# newline
+# newline
+Cha	Cha	Qn
+d'	d'	Q--s
+fhuair	faigh	V-s
+gin	gin	Ncsfn
+de	de	Sp
+phàrtaidhean	pàrtaidh	Ncpmd
+eile	eile	Aq-pmd
+,	,	Fi
+no	no	Cc
+de	de	Sp
+thagraichean	tagraiche	Ncpmd
+neo-eisimeileach	neo-eisimeileach	Aq-pmd
+,	,	Fi
+seat	seat	Xfe
+.	.	Fe
+
+# newline
+# newline
+Nam	Nam	Q-s
+measg	measg	Nf
+sin	sin	Pd
+bha	bi	V-s
+Pàrtaidh	pàrtaidh	Ncsmn
+Alba	Alba	Nt
+,	,	Fi
+a	a	Q-r
+stèidhich	stèidhich	V-s
+Ailig	Ailig	Nn-mn
+Salmond	Salmond	Nn
+sa	sa	Spa-s
+Mhàrt	Mhàrt	Ncsmd
+'s	's	Wp-i
+e	e	Pp3sm
+ag	ag	Sa
+amas	amas	Nv
+air	air	Sp
+"	"	Fz
+sàr-mhòr-chuid	sàr-mhòr-chuid	Ncsfd
+"	"	Fz
+fhaighinn	faighinn	Nv
+airson	airson	Nf
+neo-eisimeileachd	neo-eisimeileachd	Mc
+sa	sa	Spa-s
+Phàrlamaid	pàrlamaid	Ncsfd
+.	.	Fe
+
+Fhuair	faigh	V-s
+am	am	Tdsm
+pàrtaidh	pàrtaidh	Ncsmn
+1.7	1.7	Nn-mn
+%	%	Nn
+den	den	Spa-s
+bhòt	bhòta	Ncsmd
+,	,	Fi
+'s	's	Cc
+iad	iad	Pp3p
+a'	a'	Sa
+seasamh	seasamh	Nv
+sna	sna	Spa-p
+liostaichean	liosta	Ncpfd
+roinneil	roinneil	Aq-pfd
+a-mhàin	a-mhàin	Rg
+.	.	Fe
+
+# newline
+# newline
+A	A	Sp
+thuilleadh	thuilleadh	Ncsmd
+air	air	Sp
+neo-eisimeileachd	neo-eisimeileachd	Ncsfd
+,	,	Fi
+bidh	bi	V-f
+buaidh	buadh	Ncsfn
+aig	aig	Sp
+mar	mar	Cs
+nach	nach	Qn
+eil	bi	V-p--d
+mòr-chuid	mòr-chuid	Ncsfn
+aig	aig	Sp
+an	an	Tdsm
+SNP	SNP	Nt
+air	air	Sp
+gnothaichean	gnothach	Ncpmd
+sna	sna	Spa-p
+bliadhnaichean	bliadhna	Ncpfd
+ri	ri	Sa
+tighinn	tighinn	Nv
+.	.	Fe
+
+# newline
+# newline
+Feumaidh	feum	V-f
+iad	iad	Pp3p
+taic	tac	Ncsfn
+phàrtaidhean	pàrtaidh	Ncpmg
+eile	eile	Aq-pmg
+airson	airson	Nf
+buidseatan	buidseatan	Ncsmg*
+agus	agus	Cc
+poileasaidhean	poileasaidh	Ncpmn
+a	a	Ug
+chur	chur	Nv
+troimhe	tro + e	Pr3sm
+.	.	Fe
+
+# newline
+# newline
+B'	B'	Ws
+e	e	Pp3sm
+sin	sin	Pd
+an	an	Tdsm
+suidheachadh	suidheachadh	Ncsmn
+a	a	Q-r
+bh'	bi	V-s
+ann	e	Pr3sm
+sa	sa	Spa-s
+Phàrlamaid	pàrlamaid	Ncsfd
+roimhe	ro + e	Pr3sm
+ge-tà	ge-tà	Rg
+,	,	Fi
+leis	leis	Sp
+an	an	Tdsm
+SNP	SNP	Nt
+ag	ag	Sa
+obrachadh	obrachadh	Nv
+còmhla	còmhla	Rg
+ris	ris	Sp
+na	na	Tdpm
+h-Uainich	h-Uainich	Ncpmd
+airson	airson	Nf
+grunn	grunn	Ncsmn
+phìosan	pìos	Ncpmg
+reachdais	reachdas	Ncsmg
+a	a	Ug
+chur	chur	Nv
+troimhe	tro + e	Pr3sm
+.	.	Fe
+
+# newline
+# newline
+Tha	bi	V-p
+sin	sin	Pd
+a'	a'	Sa
+fàgail	fàgail	Nv
+gur	gur	Wpdia
+dòcha	dòcha	Uf
+gun	gun	Qa
+tèid	rach	V-f--d
+cuid	cuid	Ncsfn
+de	de	Sp
+phoileasaidhean	poileasaidh	Ncpmd
+aig	aig	Sp
+pàrtaidhean	pàrtaidh	Ncpmd
+eile	eile	Aq-pmd
+-	-	Fb
+gu	gu	Ua
+h-àraid	h-àraid	Rg
+na	na	Tdpm
+h-Uainich	h-Uainich	Ncpmd
+-	-	Fb
+a	a	Ug
+chur	chur	Nv
+an	an	Sp
+sàs	sàs	Ncsmd
+,	,	Fi
+ma	ma	Cs
+tha	bi	V-p
+an	an	Tdsm
+Riaghaltas	riaghaltas	Ncsmn
+ag	ag	Sa
+iarraidh	iarraidh	Nv
+gum	gum	Qa
+bhòt	bhòt	V-f--d
+pàrtaidhean	pàrtaidh	Ncpmn
+eile	eile	Aq-pmn
+leotha	le + iad	Pr3p
+.	.	Fe
+
+# newline
+# newline
+Cha	Cha	Qn
+bhi	bi	V-f--d
+ge-tà	ge-tà	Rg
+,	,	Fi
+mòr-chuid	mòr-chuid	Ncsfn
+aig	aig	Sp
+an	an	Tdsm
+Riaghaltas	riaghaltas	Ncsmd
+aig	aig	Sp
+gin	gin	Ncsfd
+de	de	Sp
+chomataidhean	comataidh	Ncpmd
+Holyrood	Holyrood	Nt
+-	-	Fb
+'s	's	Cc
+dh'fhaodadh	faod	V-h
+sin	sin	Pd
+fàgail	fàgail	Nv
+nach	nach	Qn
+tèid	rach	V-f--d
+reachdas	reachdas	Ncsmn
+a	a	Ug
+chur	chur	Nv
+tron	tron	Spa-s
+Phàrlamaid	pàrlamaid	Ncsfd
+gun	gun	Sp
+dùbhlan	dùbhlan	Ncsmd
+.	.	Fe
+
+# newline

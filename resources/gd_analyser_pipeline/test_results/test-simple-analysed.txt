@@ -1,0 +1,612 @@
+Riaghaltas	riaghaltas	Nc
+ùr	ùr	Aq
+SNP	SNP	Nt
+,	,	F
+ach	ach	Sp
+gann	gann	Nc
+de	de	Sp
+mhòr-chuid	mhòr-chuid	Nc
+
+# newline
+# newline
+Published	Published	Nn
+
+# newline
+# newline
+o	o	Sp
+chionn	chionn	Nf
+8	8	M
+uairean	uair	Nc
+de	de	Sp
+thìde	tìde	Nc
+
+# newline
+# newline
+Mapa	Mapa	Cs
+is	is	Cc
+Nicola	Nicola	Nn
+Sturgeon	Sturgeon	Nn
+
+# newline
+# newline
+'S	'S	Wp
+iad	iad	Pp
+Pàrtaidh	pàrtaidh	Nc
+Nàiseanta	nàiseanta	Aq
+na	na	Td
+h-Alba	h-Alba	Nc
+a	a	Q
+bhuannaich	buannaich	Vs
+taghadh	taghadh	Nc
+Pàrlamaid	pàrlamaid	Nc
+na	na	Td
+h-Alba	h-Alba	Nt
+.	.	F
+
+# newline
+# newline
+Fhuair	faigh	Vs
+iad	iad	Pp
+64	64	M
+seat	seat	Nc
+-	-	F
+aon	aon	M
+gann	gann	Nc
+air	air	Sp
+an	an	Td
+65	65	M
+a	a	Q
+dh'fheumadh	feum	Vh
+iad	iad	Pp
+airson	airson	Nf
+mòr-chuid	mòr-chuid	Nc
+a	a	U
+bhith	bith	Nv
+aca	aig + 	Pr
+leotha	le + 	Pr
+fhèin	fhèin	Px
+.	.	F
+
+# newline
+# newline
+Thuirt	abair	Vs
+Nicola	Nicola	Nn
+Sturgeon	Sturgeon	Nn
+gur	gur	Wp
+e	e	Pp
+"	"	F
+toradh	toradh	Nc
+eachdraidheil	eachdraidheil	Aq
+agus	agus	Cc
+sònraichte	sònraich	Aq
+"	"	F
+a	a	Q
+bh'	bi	Vs
+ann	ann an	Pr
+,	,	F
+leis	leis	Sp
+an	an	Td
+SNP	SNP	Nt
+a-niste	a-niste	Rt
+gus	gus	Sp
+riaghaltas	riaghaltas	Nc
+a	a	U
+chruthachadh	chruthachadh	Nv
+airson	airson	Nf
+a'	a'	Sa
+cheathramh	cheathramh	Nv
+turas	turas	Nc
+sreath	sreath	Aq
+a	a	Sp
+chèile	chèile	Px
+.	.	F
+
+# newline
+# newline
+'S	'S	Wp
+iad	iad	Pp
+na	na	Td
+Tòraidhean	Tòraidh	Nc
+an	an	Td
+ath-bhuidhinn	ath-bhuidhinn	Nc
+as	as	Wp
+motha	mòr	Ap
+sa	sa	Sp
+Phàrlamaid	pàrlamaid	Nc
+,	,	F
+'s	's	Cc
+iadsan	iadsan	Pp
+le	le	Sp
+31	31	M
+seat	seat	Nc
+.	.	F
+
+# newline
+# newline
+Fhuair	faigh	Vs
+na	na	Td
+Làbaraich	Làbarach	Nc
+22	22	Aq
+,	,	F
+'s	's	Cc
+na	na	Td
+Libearalaich	Libearalach	Nc
+Dheamocratach	deamocratach	Aq
+ceithir	ceithir	M
+.	.	F
+
+# newline
+Neo-eisimeileachd	neo-eisimeileachd	Nc
+
+# newline
+# newline
+Tha	bi	Vp
+a-niste	a-niste	Rt
+ge-tà	ge-tà	Rg
+,	,	F
+mòr-chuid	mòr-chuid	Nc
+anns	anns	Sp
+a'	a'	Td
+Phàrlamaid	pàrlamaid	Nc
+airson	airson	Nf
+neo-eisimeileachd	neo-eisimeileachd	Nc
+,	,	F
+'s	's	Cc
+na	na	Td
+h-Uainich	h-Uainich	Nc
+air	air	Sp
+soirbheachadh	soirbheachadh	Nc
+,	,	F
+a'	a'	Sa
+faighinn	faighinn	Nv
+ochdnar	ochdnar	Sp
+bhall	ball	Nc
+-	-	F
+triùir	triùir	Nc
+a	a	Sp
+bharrachd	barrachd	Nc
+air	air	Sp
+na	na	Q
+bha	bi	Vs
+aca	aig + 	Pr
+sa	sa	Sp
+Phàrlamaid	pàrlamaid	Nc
+mu	mu	Sp
+dheireadh	dheireadh	Nc
+.	.	F
+
+# newline
+# newline
+Tha	bi	Vp
+72	72	M
+bhall	ball	Nc
+a'	a'	Sa
+riochdachadh	riochdachadh	Nv
+phàrtaidhean	pàrtaidh	Nc
+a	a	Q
+th'	bi	Vp
+airson	airson	Nf
+neo-eisimeileachd	neo-eisimeileachd	Nc
+,	,	F
+le	le	Sp
+57	57	M
+a'	a'	Sa
+riochdachadh	riochdachadh	Nv
+phàrtaidhean	pàrtaidh	Nc
+a	a	Q
+tha	bi	Vp
+na	na	Td
+h-aghaidh	h-aghaidh	Nc
+.	.	F
+
+# newline
+# newline
+Bhòt	bhòt	Vs
+barrachd	barrachd	Nc
+dhaoine	duine	Nc
+na	na	Td
+bhòt	bhòta	Nc
+riamh	riamh	Rt
+roimhe	ro + 	Pr
+ann	ann an	Pr
+an	an	Sp
+taghadh	taghadh	Nc
+Albannach	Albannach	Aq
+-	-	F
+63.2	63.2	X
+%	%	X
+dhiubhsan	de	Pr
+aig	aig	Sp
+an	an	Q
+robh	bi	Vs
+cead	cead	Nc
+bhòtadh	bhòtadh	Nc
+.	.	F
+
+# newline
+# newline
+Ann	Ann	Sp
+am	am	Td
+baileat	baileat	Nc
+nan	nan	Td
+roinnean-taghaidh	roinn-taghaidh	Nc
+,	,	F
+dh'èirich	èirich	Vs
+cuibhreann	cuibhreann	Nc
+an	an	Sp
+SNP	SNP	Nt
+den	den	Sp
+bhòt	bhòta	Nc
+-	-	F
+suas	suas	Rs
+1.2	1.2	Nn
+%	%	Nn
+air	air	Sp
+na	na	Q
+fhuair	faigh	Vs
+iad	iad	Pp
+ann	ann an	Pr
+an	an	Sp
+taghadh	taghadh	Nc
+2016	2016	M
+.	.	F
+
+# newline
+# newline
+Thuit	tuit	Vs
+cuibhreann	cuibhreann	Nc
+nan	nan	Td
+Tòraidhean	Tòraidh	Nc
+-	-	F
+sìos	sìos	Rs
+0.1	0.1	X
+%	%	X
+-	-	F
+agus	agus	Cc
+cuibhreann	cuibhreann	Nc
+nan	nan	Td
+Làbarach	Làbarach	Nc
+-	-	F
+sìos	sìos	Rs
+1	1	M
+%	%	X
+,	,	F
+leis	leis	Sp
+na	na	Td
+Lib-Deamaich	Lib-Deamaich	Nc
+a'	a'	Sa
+tuiteam	tuiteam	Nv
+0.9	0.9	X
+%	%	X
+.	.	F
+
+# newline
+# newline
+Dh'èirich	èirich	Vs
+cuibhreann	cuibhreann	Nc
+nan	nan	Td
+Uaineach	Uaineach	Nc
+,	,	F
+'s	's	Cc
+iadsan	iadsan	Pp
+suas	suas	Rs
+0.7	0.7	X
+%	%	X
+.	.	F
+
+# newline
+Co-obrachadh	co-obraich	Vh
+
+# newline
+# newline
+'S	'S	Wp
+e	e	Pp
+sgeulachd	sgeulachd	Nc
+beagan	beagan	Nc
+eadar-dealaichte	eadar-dealaichte	Aq
+a	a	Q
+th'	bi	Vp
+ann	ann an	Pr
+ge-tà	ge-tà	Rg
+,	,	F
+ann	ann an	Pr
+am	am	Sp
+baileat	baileat	Nc
+nan	nan	Td
+roinnean	roinn	Nc
+-	-	F
+am	am	Td
+baileat	baileat	Nc
+far	far	Cs
+an	an	Q
+taghadh	tagh	Vh
+daoine	duine	Nc
+buill	ball	Nc
+eile	eile	Aq
+'son	'son	Nf
+na	na	Td
+roinnean	roinn	Nc
+aca	aig + 	Pr
+a	a	U
+riochdachadh	riochdachadh	Nv
+sa	sa	Sp
+Phàrlamaid	pàrlamaid	Nc
+.	.	F
+
+# newline
+# newline
+Anns	Anns	Sp
+a'	a'	Td
+bhaileat	bhaileat	Nc
+sin	sin	Dd
+,	,	F
+thuit	tuit	Vs
+cuibhreann	cuibhreann	Nc
+an	an	Sp
+SNP	SNP	Nt
+-	-	F
+sìos	sìos	Rs
+1.4	1.4	X
+%	%	X
+-	-	F
+leis	leis	Sp
+na	na	Td
+Tòraidhean	Tòraidh	Nc
+suas	suas	Rs
+0.6	0.6	X
+%	%	X
+.	.	F
+
+# newline
+# newline
+Bha	bi	Vs
+na	na	Td
+Làbaraich	Làbarach	Nc
+cuideachd	cuideachd	Rg
+sìos	sìos	Rs
+sa	sa	Sp
+bhaileat	bhaileat	Nc
+seo	seo	Dd
+-	-	F
+a'	a'	Sa
+tuiteam	tuiteam	Nv
+1.2	1.2	X
+%	%	X
+,	,	F
+a	a	U
+thuilleadh	thuilleadh	Nv
+air	air	Sp
+na	na	Td
+Lib-Deamaich	Lib-Deamaich	Nc
+,	,	F
+sìos	sìos	Rs
+0.1	0.1	X
+%	%	X
+.	.	F
+
+# newline
+# newline
+Dh'èirich	Dh'èirich	U
+ge-tà	ge-tà	Rg
+,	,	F
+cuibhreann	cuibhreann	Nc
+nan	nan	Td
+Uaineach	Uaineach	Nc
+-	-	F
+suas	suas	Rs
+1.5	1.5	X
+%	%	X
+.	.	F
+
+# newline
+# newline
+Cha	Cha	Q
+d'	d'	Q
+fhuair	faigh	Vs
+gin	gin	Nc
+de	de	Sp
+phàrtaidhean	pàrtaidh	Nc
+eile	eile	Aq
+,	,	F
+no	no	Cc
+de	de	Sp
+thagraichean	tagraiche	Nc
+neo-eisimeileach	neo-eisimeileach	Aq
+,	,	F
+seat	seat	Nc
+.	.	F
+
+# newline
+# newline
+Nam	Nam	Sp
+measg	measg	Nf
+sin	sin	Pd
+bha	bi	Vs
+Pàrtaidh	pàrtaidh	Nc
+Alba	Alba	Nt
+,	,	F
+a	a	Q
+stèidhich	stèidhich	Vs
+Ailig	Ailig	Nn
+Salmond	Salmond	Nn
+sa	sa	Sp
+Mhàrt	Mhàrt	Nc
+'s	's	Wp
+e	e	Pp
+ag	ag	Sa
+amas	amas	Nv
+air	air	Sp
+"	"	F
+sàr-mhòr-chuid	sàr-mhòr-chuid	Nc
+"	"	F
+fhaighinn	faighinn	Nv
+airson	airson	Nf
+neo-eisimeileachd	neo-eisimeileachd	Nc
+sa	sa	Sp
+Phàrlamaid	pàrlamaid	Nc
+.	.	F
+
+Fhuair	faigh	Vs
+am	am	Td
+pàrtaidh	pàrtaidh	Nc
+1.7	1.7	Nn
+%	%	Nn
+den	den	Sp
+bhòt	bhòta	Nc
+,	,	F
+'s	's	Cc
+iad	iad	Pp
+a'	a'	Sa
+seasamh	seasamh	Nv
+sna	sna	Sp
+liostaichean	liosta	Nc
+roinneil	roinneil	Aq
+a-mhàin	a-mhàin	Rg
+.	.	F
+
+# newline
+# newline
+A	A	Sp
+thuilleadh	thuilleadh	Nc
+air	air	Sp
+neo-eisimeileachd	neo-eisimeileachd	Nc
+,	,	F
+bidh	bi	Vf
+buaidh	buadh	Nc
+aig	aig	Sp
+mar	mar	Cs
+nach	nach	Q
+eil	bi	Vp
+mòr-chuid	mòr-chuid	Nc
+aig	aig	Sp
+an	an	Td
+SNP	SNP	Nt
+air	air	Sp
+gnothaichean	gnothach	Nc
+sna	sna	Sp
+bliadhnaichean	bliadhna	Nc
+ri	ri	Sa
+tighinn	tighinn	Nv
+.	.	F
+
+# newline
+# newline
+Feumaidh	feum	Vf
+iad	iad	Pp
+taic	tac	Nc
+phàrtaidhean	pàrtaidh	Nc
+eile	eile	Aq
+airson	airson	Nf
+buidseatan	buidseatan	Nc
+agus	agus	Cc
+poileasaidhean	poileasaidh	Nc
+a	a	U
+chur	chur	Nv
+troimhe	tro + 	Pr
+.	.	F
+
+# newline
+# newline
+B'	B'	Ws
+e	e	Pp
+sin	sin	Pd
+an	an	Td
+suidheachadh	suidheachadh	Nc
+a	a	Q
+bh'	bi	Vs
+ann	ann an	Pr
+sa	sa	Sp
+Phàrlamaid	pàrlamaid	Nc
+roimhe	ro + 	Pr
+ge-tà	ge-tà	Rg
+,	,	F
+leis	leis	Sp
+an	an	Td
+SNP	SNP	Nt
+ag	ag	Sa
+obrachadh	obrachadh	Nv
+còmhla	còmhla	Rg
+ris	ris	Sp
+na	na	Td
+h-Uainich	h-Uainich	Nc
+airson	airson	Nf
+grunn	grunn	Nc
+phìosan	pìos	Nc
+reachdais	reachdas	Nc
+a	a	U
+chur	chur	Nv
+troimhe	tro + 	Pr
+.	.	F
+
+# newline
+# newline
+Tha	bi	Vp
+sin	sin	Pd
+a'	a'	Sa
+fàgail	fàgail	Nv
+gur	gur	Wp
+dòcha	dòcha	U
+gun	gun	Q
+tèid	rach	Vf
+cuid	cuid	Nc
+de	de	Sp
+phoileasaidhean	poileasaidh	Nc
+aig	aig	Sp
+pàrtaidhean	pàrtaidh	Nc
+eile	eile	Aq
+-	-	F
+gu	gu	U
+h-àraid	h-àraid	Rg
+na	na	Td
+h-Uainich	h-Uainich	Nc
+-	-	F
+a	a	U
+chur	chur	Nv
+an	an	Sp
+sàs	sàs	Nc
+,	,	F
+ma	ma	Cs
+tha	bi	Vp
+an	an	Td
+Riaghaltas	riaghaltas	Nc
+ag	ag	Sa
+iarraidh	iarraidh	Nv
+gum	gum	Sp
+bhòt	bhòta	Nc
+pàrtaidhean	pàrtaidh	Nc
+eile	eile	Aq
+leotha	le + 	Pr
+.	.	F
+
+# newline
+# newline
+Cha	Cha	Q
+bhi	bi	Vf
+ge-tà	ge-tà	Rg
+,	,	F
+mòr-chuid	mòr-chuid	Nc
+aig	aig	Sp
+an	an	Td
+Riaghaltas	riaghaltas	Nc
+aig	aig	Sp
+gin	gin	Nc
+de	de	Sp
+chomataidhean	comataidh	Nc
+Holyrood	Holyrood	Nt
+-	-	F
+'s	's	Cc
+dh'fhaodadh	faod	Vh
+sin	sin	Pd
+fàgail	fàgail	Nv
+nach	nach	Q
+tèid	rach	Vf
+reachdas	reachdas	Nc
+a	a	U
+chur	chur	Nv
+tron	tron	Sp
+Phàrlamaid	pàrlamaid	Nc
+gun	gun	Sp
+dùbhlan	dùbhlan	Nc
+.	.	F
+
+# newline
