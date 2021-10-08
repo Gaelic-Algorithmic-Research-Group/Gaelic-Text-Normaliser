@@ -8,6 +8,14 @@ To use the program you will have to clone the repo and either run it through the
 
 ## instructions
 
+``from GaelicTextNormaliser import TextNormaliser``
+  
+``normaliser = TextNormaliser(from_config="config.yaml")``
+  
+``normaliser.normalise_doc(doc="Bha rìgh òg Easaidh Ruagh an dèigh dha'n oighreachd fhaotainn da fèin ri mòran àbhachd, ag amharc a mach dè a chordadh ris,'s dè thigeadh r'a nadur.")``
+
+``"Bha rìgh òg Easaidh Ruadh an dèidh dhan oighreachd fhaotainn da fhèin ri mòran àbhachd, ag amharc a-mach dè a chòrdadh ris,'s dè thigeadh ra nàdar."``
+
 ## Acknowledgements 
 
 ### Scottish Gaelic Lexicon
