@@ -16,6 +16,8 @@ To use the program you will have to clone the repo and install dependencies in a
 
 ``"Bha rìgh òg Easaidh Ruadh an dèidh dhan oighreachd fhaotainn da fhèin ri mòran àbhachd, ag amharc a-mach dè a chòrdadh ris,'s dè thigeadh ra nàdar."``
 
+Alternatively there is a webapp that can be found at https://www.garg.ed.ac.uk/an_gocair. 
+
 ## Acknowledgements 
 
 ### Scottish Gaelic Lexicon
