@@ -1,0 +1,15 @@
+Informant : Mrs. Marion Campbell, Frobost.
+Collector : Calum MacLean.
+SA 1960/10 A2.
+Roinn a' Mhadaidh Ruaidh AT 51*
+
+$CIM$ Dar a bha am madadh-ruadh a' roinn càise bha e fhèin a' toirt grèim às, an robh?
+$MC$ Bha. 'S a dhèanamh cothrom.
+$CIM$ Ò àidh, àidh. An ann mar sin a bha?
+$MC$ 'S bhiodh am fear eile na bu mhotha. Bheireadh e fhèin grèim às an fhear eile 's bha e fhèin ag ithe a' chàise air fad.
+$CIM$ Ò seo agaibh mar a bha. Ò bhiodh iad ag innse naidheachdan beaga mar sin mu dheòin am madadh-ruadh 's am madadh-alladh.
+$MC$ Bha. Madadh-ruadh is madadh-alladh ann ... Innis dha mun mhadadh-ruadh 's am madadh-alladh a bha a' siubhal a' chladaich 's a fhuair an t-ìm... an tuba ime.
+$CIM$ Well, bha. Bha leithid sin ann
+$MC$ Innis am fear ud.
+
+
