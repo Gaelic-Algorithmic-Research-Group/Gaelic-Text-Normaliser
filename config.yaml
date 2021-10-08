@@ -1,0 +1,13 @@
+lexicon_path: static/lexicon/
+model_path: static/gd_model/gd_simple_model.sav
+tagset: static/tagset/tagset.pkl
+ngram_rules: static/ngram_rules/rules.yaml
+regex_rules: static/ngram_rules/regex_rules.yaml
+num_lines : 3000
+# methods are memory_based ngram_based, regex_rule_based
+methods:
+  - memory_based
+  - ngram_based
+  - regex_rule_based
+  - memory_based
+  
