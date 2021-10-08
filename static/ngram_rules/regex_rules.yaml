@@ -1,0 +1,21 @@
+#'[''a-zA-Z]?-?[a-z][a-z][a-z]+''': restore_vowel
+
+'\b\w\w\w+''$' : restore_vowel
+# fix a word like easglais' > eaglaise
+#'[a-zA-Z]+[''-][a-zA-Z]+': remove_inner_apostrophe
+'''.+' : verbal_noun_lookup
+'\b[a-zA-Z]+''[a-zA-Z]+''[a-zA-Z]+': remove_inner_apostrophe
+#'[a-z][a-z][a-z]+[''\\]': restore_vowel
+#"[a-z][a-z][a-z]+\u2019": restore_vowel
+'\b[dD]h'' ': push_together
+#'''.+' : funtion that will do an ngram rule so i need the ngrams
+a a: double_a
+arsa: drop_last_a
+'''[mn]' : anam_fixer
+'\b[dm]''.+' : insert_space
+'''\w+' : initial_apostroph
+'\b[tb]h''[a-z]+' : apostroph2space
+
+# Matches token with a grave and is out of lexicon.
+# regex rule for prefix/suffixes
+# d/m/t apostrophe rules

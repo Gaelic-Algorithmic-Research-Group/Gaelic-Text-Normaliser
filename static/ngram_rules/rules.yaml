@@ -1,0 +1,584 @@
+a:
+  rules:
+  - ngram_1:
+      match:
+      - fhèin
+      - fèin
+    replace_with: e
+    type: string
+  - ngram_01/ngram_1:
+      match:
+      - shuas seo
+      - shuas sin
+      - shuas siud
+    replace_with: an
+    type: string
+  # fixing memory based issue
+#a's:
+#  rules:
+#    - ngram_1/ngram_2:
+#        match:
+#          - a ^bh
+#          - a ^ch
+#          - a ^gh
+#          - a ^h
+#          - a ^mh
+#          - a ^ph
+#      replace_with: a's
+# add functionality to replace ngram_n
+à:
+  rules:
+  - ngram_1:
+      match:
+      - fhèin
+      - fèin
+    replace_with : e
+    type: string
+èiridh:
+  rules:
+  - ngram_01:
+      match:
+      - air
+      - ag
+      - '''g'
+    replace_with : èirigh
+    type: string
+#èiridh 2 èirigh
+'''g':
+  rules:
+  - ngram_01:
+      match:
+      - èirigh
+    replace_with: ag
+    type: string
+# restoration of elided a in relative particle + Verb
+  - ngram_1:
+      pos: Nv
+    replace_with: ag
+    type: string
+'g''':
+  rules:
+    - ngram_1:
+        match:
+        - ^a[a-z]+
+      type: regex
+      replace_with: ga
+    - ngram_1:
+        match:
+        - a
+      type: string
+      replace_with: g2become1
+aig:
+  rules:
+  - ngram_1:
+      match:
+      - orm
+      - ormsa
+      - ort
+      - ortsa
+      - air
+      - airsan
+      - oirre
+      - oirrese
+      - oirrne
+      - oirbh
+      - oirbhse
+      - orra
+      - orrasan
+    replace_with: aige
+    type: string
+bhos:
+  rules:
+  - ngram_1/ngram_2:
+      match:
+      - do chionn
+      - a chionn
+      - a cionn
+      - ar cionn
+      - ur cionn
+      - an cionn
+    replace_with: fos
+    type: string
+nais:
+  rules:
+  - ngram_02/ngram_01:
+      match:
+      - air an
+      - air ar
+      - air ur
+      - air bhur
+      - air '''ur'
+    replace_with: n-ais
+    type: string
+n'ais:
+  rules:
+  - ngram_02/ngram_01:
+      match:
+      - air an
+      - air ar
+      - air ur
+      - air bhur
+      - air '''ur'
+    replace_with: n-ais
+    type: string
+  - ngram_01:
+      match:
+      - air
+    replace_with: n-ais
+    type: string
+'''n':
+  rules:
+  - ngram_01:
+      match:
+      - do
+      - de
+      - dha
+      - dhe
+    replace_with: 2become1n
+    type: string
+  - ngram_1:
+      match:
+        - a
+    replace_with: n2become1
+    type: string
+  - ngram_1:
+      match:
+        - am
+    replace_with: n2become1
+    type: string
+  - ngram_1:
+      match:
+        - ar
+    replace_with: n2become1
+    type: string
+  - ngram_1:
+      match:
+        - ur
+    replace_with: n2become1
+    type: string
+  - ngram_1:
+      match:
+        - an
+    replace_with: n2become1
+    type: string
+  - ngram_01:
+      match:
+      - cha
+    replace_with: 2become1n 
+    type: string
+  - ngram_1:
+      match:
+      - ri
+    replace_with: 2become1n
+    type: string
+    # prepositional fusion  
+  - ngram_01:
+      match:
+      - ri
+      - le
+      - dha
+      - bho
+      - o
+      - fo
+      - ro
+      - dhi
+      - tro
+      - mu
+    replace_with: 2become1n
+    type: string
+chon:
+  rules:
+  - ngram_1:
+      match:
+      - an
+      - 'a'''
+      - nan
+      - nam
+    replace_with: chun
+    type: string
+dhith:
+  rules:
+  - ngram_01:
+      match:
+      - urra
+      - urrainn
+    replace_with: dhi
+    type: string
+bhur:
+  rules:
+  - ngram_01:
+      match:
+      - air
+    replace_with: ur
+    type: string
+'''ur':
+  rules:
+  - ngram_01:
+      match:
+      - air
+    replace_with: ur
+    type: string
+an:
+  rules:
+  - ngram_01:
+      match:
+      - chan
+    replace_with: <space>
+    type: string
+#                   prepositional fusion 
+#                   prepositions fusing with possessive pronoun
+'m''':
+  rules:
+  - ngram_1:
+      match:
+      - a
+    replace_with: m2become1
+    type: string
+'r''':
+  rules:
+  - ngram_1:
+      match:
+      - a
+      - ar
+      - an
+    replace_with: r2become1
+    type: string 
+'''r':
+  rules:
+  - ngram_01:
+      match:
+      - ri
+      - dha
+      - le
+      - bho
+      - o
+      - fo
+      - do
+      - o
+      - fo
+      - dhi
+      - ro
+      - tro
+      - ma
+      - mu
+    replace_with: 2become1r
+    type: string  
+'d''':
+  rules:
+  - ngram_1:
+      match:
+      - a
+      - ar
+      - ur
+    replace_with: d2become1
+    type: string
+'''m':
+  rules:
+    - ngram_01:
+        match:
+        - bho
+        - o
+        - fo
+        - dhi
+        - ro
+        - tro
+        - mu
+        - dha
+        - le
+        - gu
+      replace_with: 2become1m
+      type: string
+ann:
+  rules:
+    - ngram_1/ngram_2:
+        match:
+        - a sin
+        - a sineach
+        - a shineach
+        - a seo
+        - a seothach
+        - a sheothach
+        - a shiudach
+        - a siud
+        - a siudach
+        - a shin
+        - a sheo
+      replace_with: an2become1
+      type: string
+# as vs às 
+as:
+  rules:
+    - ngram_1:
+        match:
+        - mo
+        - 'm'''
+        - do
+        - 'd'''
+        - a
+        - ar
+        - ur
+        - dèidh
+        - deidh
+      replace_with: às
+      type: string
+# bi or not bidh? 
+bidh:
+  rules:
+    - ngram_01:
+        match:
+        - '''m'
+        - am
+        - gum
+        - nach
+        - mura
+        - mur
+        - mus
+        - mum
+        - na
+      replace_with: bi
+      type: string
+# colach coltach 
+# might need help understndingthis one
+
+# dh to dheth
+dhe:
+  rules:
+    - ngram_1:
+        match:
+        - '[a-z]+[.,?>]\b'
+      replace_with: dheth
+      type: regex
+#    - ngram_1:
+#        pos: N
+#      replace_with: dheth
+#      type: string
+# leas to a leas 
+leas:
+  rules:
+    - ngram_02/ngram_01:
+        match: 
+          - r'ruig' r'[b-z]+'
+          - r'leig' r'[b-z]+'
+      type: regex
+      replace_with: a leas
+# remember to check yamlchecker.com
+# 'na na 'n a etc
+na:
+  rules:
+  - ngram_1:
+      match:
+      - a
+    type: string
+    replace_with: n2become1
+  - ngram_1:
+      match:
+        - a
+    type: not_string
+    replace_with: na
+# ngrams de mar 
+de:
+  rules:
+  - ngram_1:
+      match:
+      - mar
+    type: string
+    replace_with: dè
+# partitive and de what
+  - ngram_1:
+      pos: V
+    type: string
+    replace_with: dè
+os:
+  rules:
+  - ngram_1:
+      pos: Pp
+    replace_with: ors
+    type: string
+  - ngram_1:
+      pos: Nn
+    replace_with: ors
+    type: string
+# restore sa bith to sam bith
+'''sa''':
+  rules:
+  - ngram_1:
+      match:
+      - bith
+    replace_with: sam
+    type: string
+'''sa':
+  rules:
+  - ngram_1:
+      match:
+      - bith
+    replace_with: sam
+    type: string
+sa:
+  rules:
+  - ngram_1:
+      match:
+      - bith
+    replace_with: sam
+    type: string
+# an da
+da:
+  rules:
+  - ngram_01:
+      match:
+      - An
+      - an
+    replace_with: 2become1-da
+    type: string
+'''N':
+  rules:
+    - ngram_1:
+        match:
+        - dà
+      replace_with: An-2become1
+      type: string
+# Fix accidental change of grave on Mhór
+Mhòr:
+  rules:
+    - ngram_01:
+        match:
+        - Aird
+      replace_with: Mhór
+      type: string
+# fixing i os
+i:
+  rules:
+    - ngram_1:
+        match:
+        - os
+      replace_with: fhi2become1
+      type: string
+# bhi to bhith
+bhi:
+  rules:
+    - ngram_01:
+        match:
+          - a
+          - ri
+          - gu
+          - le
+          - ro
+      replace_with: bhith
+      type: string
+      
+# dh'andeoin missing an a
+'dh''aindeoin':
+  rules:
+    - ngram_01:
+        match:
+          - a
+          - None
+      type: not_string
+      replace_with: a dh'aindeoin
+# c' uin aite .. .
+bhidh:
+  rules:
+    - ngram_01:
+         match:
+         - cha
+         - Cha
+      replace_with: bhi
+      type: string
+    - ngram_1:
+        match:
+        - ^'
+      type: regex 
+      replace_with: 
+        ngram: ngram_1
+        function: adjective_lookup
+bhìdh:
+  rules:
+    - ngram_01:
+        match:
+        - cha
+        - Cha
+      replace_with: bhi
+      type: string
+bheil:
+  rules:
+    - ngram_01:
+        match:
+        - Càite
+        - Càit
+        - càit
+        - càite
+      replace_with: a bheil
+      type: string
+#
+staigh:
+  rules:
+    - ngram_01:
+        match:
+        - '[^a]'
+      type: regex
+      replace_with: a-staigh
+    - ngram_01:
+        match:
+          - a
+      type: string
+      replace_with: 2become1-staigh
+mach:
+  rules:
+    - ngram_01:
+        match:
+        - '[^a]'
+      type: regex
+      replace_with: a-mach
+    - ngram_01:
+        match:
+          - a
+      type: string
+      replace_with: 2become1-mach
+mhiosan:
+  rules:
+    - ngram_01:
+        match:
+        - beagan
+        - bheagan
+        - fad
+        -  rè
+        -  mòran
+        -  mhòran
+        -  cionn
+        -  chionn
+        -  airson
+        -  grunn
+      type: string
+      replace_with: mhìosan
+tha:    
+  rules:
+    - ngram_1:
+        match:
+        - ^'
+      type: regex 
+      replace_with: 
+        ngram: ngram_1
+        function: adjective_lookup
+bha:    
+  rules:
+    - ngram_1:
+        match:
+        - ^'
+      type: regex 
+      replace_with: 
+        ngram: ngram_1
+        function: adjective_lookup
+'''\w+':
+  rules:
+    - ngram_1:
+        pos: N
+      type: regex 
+      replace_with: 
+        ngram: ngram_1
+        function: adjective_lookup
+Na:
+  rules:
+    - ngram_1:
+        match:
+        - am
+      type: string
+      replace_with: Nam
