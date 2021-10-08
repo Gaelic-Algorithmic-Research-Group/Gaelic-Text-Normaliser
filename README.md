@@ -21,8 +21,8 @@ The lexical and grammatical rules for normalisation were the result of collabora
 
 ### Scottish Gaelic Part of Speech Tagger 
 
-For further conditioning in the rule based approach, part of speech tags were necessary. The code and models for POS tagging is very kindly provided by Dr Loic. The scripts were altered slightly to work within the python object. 
+For further conditioning in the rule based approach, part of speech tags were necessary. The code and models for POS tagging is very kindly provided by  Loïc Boizou. The scripts were altered slightly to work within the python object. 
 
 ### Further Acknowledgements
 
-Gaelic resources, advice and feedback were all provided by the (Name of our research group) consisting of (everyone). 
+This program was funded by the Data-Driven Innovation initiative (DDI), delivered by the University of Edinburgh and Heriot-Watt University for the Edinburgh and South East Scotland City Region Deal. DDI is an innovation network helping organisations tackle challenges for industry and society by doing data right to support Edinburgh in its ambition to become the data capital of Europe. The project was delivered by the Edinburgh Futures Institute (EFI), one of five DDI innovation hubs which collaborates with industry, government and communities to build a challenge-led and data-rich portfolio of activity that has an enduring impact.
