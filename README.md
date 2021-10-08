@@ -4,7 +4,7 @@ The following project contains the code and resources for the Scottish Gaelic te
 
 ## Installation 
 
-To use the program you will have to clone the repo and either run it through the command line or inside a Jupyter notebook. 
+To use the program you will have to clone the repo and install dependencies in a python virtualenvironment using python 3 and above. 
 
 ## instructions
 
