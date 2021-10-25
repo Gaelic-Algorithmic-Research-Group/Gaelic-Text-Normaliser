@@ -18,6 +18,15 @@ To use the program you will have to clone the repo and install dependencies in a
 
 Alternatively there is a webapp that can be found at https://www.garg.ed.ac.uk/an_gocair. 
 
+### Command Line 
+
+The program can be run in the command line, for example if you want to provide an input file for normalisation and then the pat to save the file to. 
+
+``python GaelicTextNormaliser.py --path_to_input_text "resources/data/from_michael_before/__1969_113A__Iain_Mac_an_Iasgair.txt" --output_path "text.txt"``
+
+Argumend:
+    ``--path_to_input_text``: This is the path to the file you want to normalise 
+    ``--output_path``       : This is the output path to save the normalised text to
 ## Acknowledgements 
 
 ### Supervision 
