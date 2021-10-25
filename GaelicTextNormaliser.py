@@ -1,11 +1,10 @@
-import argparse
+import argparse as ap
 import pickle
 
 import pandas as pd
 import yaml
 import Levenshtein
 from diff_match_patch import diff_match_patch
-
 
 from utils.regex_functions import RegexFunctions
 from utils.text_normaliser import *
@@ -14,8 +13,6 @@ from utils.preprocess import preprocess_doc
 from tqdm.auto import tqdm
 from utils.lexicon import Lexicon
 from hunspell import Hunspell
-
-from nltk.tokenize import word_tokenize
 
 '''
 The TextNormaliser is the main class and can be imported
@@ -40,26 +37,43 @@ h = Hunspell()
 ool_rules = ool_rules
 diff = diff_match_patch()
 sc = Hunspell('gd_GB', hunspell_data_dir='dictionaries')
-#sc = hunspell.HunSpell('dictionaries/gd_GB.dic', 'dictionaries/gd_GB.aff')
+
+
+# sc = hunspell.HunSpell('dictionaries/gd_GB.dic', 'dictionaries/gd_GB.aff')
+
+def mainargs():
+    args = ap.ArgumentParser()
+    args.add_argument('--path_to_config', type=str,
+                      help="The config holds the predefined configuration for the normaliser",
+                      default="config.yaml")
+    args.add_argument('--path_to_input_text', type=str, help="Path to the text to be normalised")
+    args.add_argument('--input_text', type=str, help="Input text in the command line to be normaliseed", default=None)
+    args.add_argument('--output_path', type=str, help="Path for the outputted text")
+    args.add_argument('--return_backend', type=str,
+                      help="Return a backend file with further analysis of the normaliser", default=None)
+    args.add_argument('--verbose', type=str, help="Print to screen info about normalisation (may slow down the program",
+                      default=None)
+    args = args.parse_args()
+
+    return args
+
 
 def multihyphen(token):
-    
     splat_tok = token.split('-')
 
     if len(splat_tok) >= 2:
 
-        if sc.spell(token) == False:
-
+        if not sc.spell(token):
             return ' '.join(splat_tok), True
-        
+
     return token, False
 
 
-def paint_line(tok_map, idx, token):
+def paint_line(tok_map, token):
 
-    for idx, tok in tok_map.items():
+    for num, tok in tok_map.items():
         if tok == token:
-            tok_map[idx] = f'[!{token}!]'
+            tok_map[num] = f'[!{token}!]'
 
     return tok_map, token
 
@@ -84,7 +98,6 @@ def save_text(text, path):
 
 
 def top_key(dic):
-
     # Finds the first key of a dictionary
 
     keys = list(dic.keys())
@@ -92,7 +105,6 @@ def top_key(dic):
 
 
 def load(path):
-
     # Finds path in config that is a yaml file
 
     if path[-4:] == 'yaml':
@@ -180,13 +192,6 @@ class TextNormaliser:
         analysed = {}
         for num, raw_token in tok_map.items():
 
-            # accentuated vowels are normalised so that all accents are facing to the left
-
-            if not just_tags:
-                raw_token=raw_token
-                #raw_token = diacritic_normaliser(raw_token)
-  
-
             lookup = self.lexicon.lexicon_lookup(raw_token, verbose)
 
             if lookup:
@@ -203,10 +208,9 @@ class TextNormaliser:
                     continue
 
             else:
-                
-                
+
                 analysed[num] = {'raw_token': raw_token,
-                                        'lexicon': 'out_of_lexicon'}
+                                 'lexicon': 'out_of_lexicon'}
 
                 if just_tags:
                     continue
@@ -233,8 +237,7 @@ class TextNormaliser:
                     raw_token, fixed = multihyphen(raw_token)
 
                     analysed[num] = {'raw_token': raw_token,
-                                        'lexicon': 'out_of_lexicon'}
-
+                                     'lexicon': 'out_of_lexicon'}
 
         return analysed
 
@@ -368,17 +371,16 @@ class TextNormaliser:
                     """
 
                     resolved = self.lexicon.resolve_token(bigram, bigram_lookup)
-                    #print(bigram)
-                    #print(resolved)
+                    # print(bigram)
+                    # print(resolved)
                     if len(resolved.split(' ')) == 2:
                         tik_map[bigram_1_idx]['resolved'] = resolved.split(' ')[0]
                         tik_map[bigram_2_idx]['resolved'] = resolved.split(' ')[1]
 
                     elif len(resolved.split(' ')) == 1:
-                        #print(resolved.split(' '))
+                        # print(resolved.split(' '))
                         tik_map[bigram_1_idx]['resolved'] = resolved.split(' ')[0].strip()
                         tik_map[bigram_2_idx]['resolved'] = '<space>'
-
 
             # else:
 
@@ -424,7 +426,7 @@ class TextNormaliser:
 
         for num, i in enumerate(idxs):
 
-            if num + 1 == len(idxs) or num+2 == len(idxs):
+            if num + 1 == len(idxs) or num + 2 == len(idxs):
                 break
 
             trigram_1_idx = idxs[num]
@@ -456,8 +458,7 @@ class TextNormaliser:
                     an da as well!
                     """
                     resolved = self.lexicon.resolve_token(trigram, trigram_lookup)
-                    #print(trigram)
-                    #print(resolved)
+
                     if len(resolved.split(' ')) == 3:
                         tik_map[trigram_1_idx]['resolved'] = resolved.split(' ')[0]
                         tik_map[trigram_2_idx]['resolved'] = resolved.split(' ')[1]
@@ -499,22 +500,22 @@ class TextNormaliser:
 
         if num > 1:
             ngrams['ngram_02'] = line_toks[num - 2]
-            ngrams['ngram_02']['tok_idx']  = line_idx[num - 2]
+            ngrams['ngram_02']['tok_idx'] = line_idx[num - 2]
 
         if num > 0:
             ngrams['ngram_01'] = line_toks[num - 1]
-            ngrams['ngram_01']['tok_idx']  = line_idx[num - 1]
+            ngrams['ngram_01']['tok_idx'] = line_idx[num - 1]
 
         ngrams['ngram'] = line_toks[num]
-        ngrams['ngram']['tok_idx']  = line_idx[num]
+        ngrams['ngram']['tok_idx'] = line_idx[num]
 
         if num < len(line_toks) - 1:
             ngrams['ngram_1'] = line_toks[num + 1]
-            ngrams['ngram_1']['tok_idx']  = line_idx[num + 1]
+            ngrams['ngram_1']['tok_idx'] = line_idx[num + 1]
 
         if num < len(line_toks) - 2:
             ngrams['ngram_2'] = line_toks[num + 2]
-            ngrams['ngram_2']['tok_idx']  = line_idx[num + 2]
+            ngrams['ngram_2']['tok_idx'] = line_idx[num + 2]
 
         if verbose:
             print(ngrams)
@@ -525,20 +526,15 @@ class TextNormaliser:
             return 'fail'
 
         if ngram_lookup:
-            
+
             if type(ngram_lookup) == str:
                 tok_map[line_idx[num]]['resolved'] = ngram_lookup
-                #print(tok_map[line_idx[num]])
-                #print('wtf')
 
             elif type(ngram_lookup) == dict:
-                #print(ngrams)
-                #print(ngrams[ngram_lookup['ngram']]['raw_token'])
-                resolved  = getattr(self.regex_functioniser, ngram_lookup['function'])(ngrams[ngram_lookup['ngram']]['raw_token'])
-                #print(resolved)
-                #print(resolved)
-                #print(tok_map)
-                # idx if ngram ngrams[ngram_lookup['ngram']]['tok_idx']
+
+                resolved = getattr(self.regex_functioniser, ngram_lookup['function'])(
+                    ngrams[ngram_lookup['ngram']]['raw_token'])
+
                 tok_map[ngrams[ngram_lookup['ngram']]['tok_idx']]['resolved'] = resolved
 
         return tok_map
@@ -562,7 +558,7 @@ class TextNormaliser:
         for tok in tokens:
 
             if tok in self.ngram_rules:
-  
+
                 if verbose:
                     print('Match')
                     print(token)
@@ -572,10 +568,9 @@ class TextNormaliser:
                     rule_lookup = rule_check(i, ngrams)
 
                     if rule_lookup:
-                    
                         return rule_lookup
-        
-    def ngram_based(self, line, return_backend=None, verbose=None,last_method=None):
+
+    def ngram_based(self, line, return_backend=None, verbose=None, last_method=None):
 
         """
         This is the main function for the ngram based lookup also knows as
@@ -641,18 +636,20 @@ class TextNormaliser:
         sent to the lookup algorithm to try and match tokens to lexicons
         """
         # Round 1
-        
+
         punc_map, tok_map = fetch_maps(line)
-        #print(punc_map, tok_map)
-        #return 0/0
+        # print(punc_map, tok_map)
+        # return 0/0
         analysed = self.analyse_line(tok_map, just_tags=None, verbose=verbose)
 
         analysed = self.bigram_resolve(analysed)
         analysed = self.trigram_resolve(analysed)
         try:
             analysed = self.extract_pos(analysed)
+
         except:
-            None
+            raise Exception("Something went wrong with the POS tagger")
+
         decoded = decode_maps(analysed, punc_map, tok_map, last_method=last_method)
 
         if not return_backend:
@@ -661,7 +658,7 @@ class TextNormaliser:
         else:
             return decoded, analysed
 
-    def regex_rule_based(self, line, return_backend=None, verbose=None,last_method=None):
+    def regex_rule_based(self, line, return_backend=None, verbose=None, last_method=None):
 
         punc_map, tok_map = fetch_maps(line)
 
@@ -695,18 +692,18 @@ class TextNormaliser:
 
         punc_map, tok_map = fetch_maps(line)
         analysed = self.analyse_line(tok_map, just_tags=None, verbose=verbose)
-        
+
         for idx in analysed:
-    
+
             if analysed[idx]['lexicon'] != 'gaelic_words':
-                
+
                 distances = []
-                
+
                 for token in sc.suggest(analysed[idx]['raw_token']):
-                    distances.append((token,Levenshtein.distance(analysed[idx]['raw_token'], token)))
-                
+                    distances.append((token, Levenshtein.distance(analysed[idx]['raw_token'], token)))
+
                 if len(distances) > 1:
-                    highest_match = sorted(distances, key=lambda x:x[1])[0][0]
+                    highest_match = sorted(distances, key=lambda x: x[1])[0][0]
                     analysed[idx]['resolved'] = highest_match
 
         decoded = decode_maps(analysed, punc_map, tok_map, last_method=last_method)
@@ -736,32 +733,32 @@ class TextNormaliser:
 
         if doc_path:
             doc = fetch_text(doc_path)
-            #print(doc)
+            # print(doc)
             doc = open(doc_path).read()
             pre_processed_doc = preprocess_doc(doc)
             pre_processed_doc = [i for i in pre_processed_doc.split('\n') if i != '']
-            #print(pre_processed_doc)
-            disable=False
+            # print(pre_processed_doc)
+            disable = False
         else:
             pre_processed_doc = [preprocess_doc(doc)]
-            disable=True
+            disable = True
 
         idx = 0
-        
-        for line in tqdm(pre_processed_doc, desc='Normalising Doc',disable=disable, total=self.num_lines):
+
+        for line in tqdm(pre_processed_doc, desc='Normalising Doc', disable=disable, total=self.num_lines):
 
             # code iterates through each method that is specified in the config
 
             for meth, method in enumerate(self.methods):
-                #print(line)
+
                 if return_backend:
-                    if meth == len(self.methods)-1:
+                    if meth == len(self.methods) - 1:
 
                         normalised_line, backend = getattr(self, method)(line, return_backend=return_backend,
-                                                                     verbose=verbose, last_method=True)
+                                                                         verbose=verbose, last_method=True)
                     else:
                         normalised_line, backend = getattr(self, method)(line, return_backend=return_backend,
-                                                                        verbose=verbose)
+                                                                         verbose=verbose)
 
                     if print_backend:
                         print(f'\nMethod: {method}\n')
@@ -769,20 +766,18 @@ class TextNormaliser:
                             print(i)
 
                 else:
-                    
-                    if meth == (len(self.methods)-1):
-                        
+
+                    if meth == (len(self.methods) - 1):
+
                         normalised_line = getattr(self, method)(line, return_backend=return_backend,
-                                                                     verbose=verbose, last_method='last line!')
+                                                                verbose=verbose, last_method='last line!')
                     else:
                         normalised_line = getattr(self, method)(line, return_backend=return_backend,
-                                                                        verbose=verbose)
+                                                                verbose=verbose)
 
                 line = normalised_line
 
             normalised.append(line)
-
-            
 
             if return_backend:
                 doc_backend.append(backend)
@@ -828,66 +823,12 @@ class TextNormaliser:
         diffs = diff.diff_main(line, normalised)
         return diff.diff_prettyHtml(diffs)
 
-    def analyse_doc(self, doc_path, doc=None):
-
-        doc_backend = []
-
-        if doc_path:
-            doc = fetch_text(doc_path)
-        else:
-            doc = [doc]
-
-        for line in tqdm(doc, desc='Analysing Doc'):
-
-            _, tok_map = pre_process_line(line)
-
-            doc_backend.append(tok_map)
-
-        return doc_backend
-
-    def token_search(self, doc, token_lookup, idx=None, verbose=None):
-
-        punct_map , tok_map = pre_process_line(doc)
-        token_matches = []
-        for idx, token in tok_map.items():
-
-            if token == token_lookup:
-
-                tok_map, _ = paint_line(tok_map, idx, token)
-
-            elif re.match(r'{}'.format(token_lookup), token):
-
-                tok_map, token_match = paint_line(tok_map, idx, token)
-                token_matches.append(token_match)
-        new_line = decode_maps(tok_map, punct_map, tok_map)
-
-        if new_line == doc:
-            return None
-        else:
-            return new_line, token_matches
-
-
-def mainargs():
-    args = argparse.ArgumentParser()
-    args.add_argument('--path_to_config', type=str,
-                      help="The config holds the predefined configuration for the normaliser",
-                      default="config.yaml")
-    args.add_argument('--path_to_input_text', type=str, help="Path to the text to be normalised")
-    args.add_argument('--input_text', type=str, help="Input text in the command line to be normaliseed", default=None)
-    args.add_argument('--output_path', type=str, help="Path for the outputted text")
-    args.add_argument('--return_backend', type=str,
-                      help="Return a backend file with further analysis of the normaliser", default=None)
-    args.add_argument('--verbose', type=str, help="Print to screen info about normalisation (may slow down the program",
-                      default=None)
-    args = args.parse_args()
-
-    return args
 
 if __name__ == '__main__':
 
     normargs = mainargs()
     normaliser = TextNormaliser(from_config=normargs.path_to_config)
-    normalisd_text=None
+    normalisd_text = None
     normargs.input_text = 'Ciamar a tha thu'
 
     if normargs.path_to_input_text:
@@ -897,8 +838,8 @@ if __name__ == '__main__':
         normalised_text = normaliser.normalise_doc(doc=normargs.input_text)
         print(normalised_text)
 
-    if normargs.output_path:
+    if normargs.output_path and normalised_text:
         save_text(normalised_text, normargs.output_path)
 
-    if normargs.verbose:
+    if normargs.verbose and normalised_text:
         print(normalised_text)
