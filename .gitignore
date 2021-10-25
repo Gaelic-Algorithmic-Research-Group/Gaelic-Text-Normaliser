@@ -1,0 +1,17 @@
+/venv/
+resources/gd_analyser_pipeline/__pycache__/crf_apply_model.cpython-37.pyc
+resources/gd_analyser_pipeline/__pycache__/crf_model_aux.cpython-37.pyc
+resources/gd_analyser_pipeline/__pycache__/gd_analyser.cpython-37.pyc
+resources/gd_analyser_pipeline/__pycache__/gd_lex_lemma.cpython-37.pyc
+resources/gd_analyser_pipeline/__pycache__/lemma_dict.cpython-37.pyc
+resources/gd_analyser_pipeline/__pycache__/seg.cpython-37.pyc
+utils/__pycache__/__init__.cpython-37.pyc
+utils/__pycache__/lexicon.cpython-37.pyc
+utils/__pycache__/preprocess.cpython-37.pyc
+utils/__pycache__/regex_functions.cpython-37.pyc
+utils/__pycache__/text_normaliser.cpython-37.pyc
+.idea/Gaelic-Text-Normaliser.iml
+.idea/misc.xml
+__pycache__/GaelicTextNormaliser.cpython-37.pyc
+.idea/Gaelic-Text-Normaliser.iml
+.idea/
