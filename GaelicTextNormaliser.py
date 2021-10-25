@@ -745,7 +745,7 @@ class TextNormaliser:
 
         idx = 0
 
-        for line in tqdm(pre_processed_doc, desc='Normalising Doc', disable=disable, total=self.num_lines):
+        for line in tqdm(pre_processed_doc, desc='Normalising Doc', disable=disable):
 
             # code iterates through each method that is specified in the config
 
@@ -829,12 +829,14 @@ if __name__ == '__main__':
     normargs = mainargs()
     normaliser = TextNormaliser(from_config=normargs.path_to_config)
     normalisd_text = None
-    normargs.input_text = 'Ciamar a tha thu'
+    #normargs.input_text = 'Ciamar a tha thu'
 
     if normargs.path_to_input_text:
-        normalised_text = normaliser.normalise_doc(normargs.input_text)
+
+        normalised_text = normaliser.normalise_doc(doc_path=normargs.path_to_input_text)
 
     if normargs.input_text:
+        
         normalised_text = normaliser.normalise_doc(doc=normargs.input_text)
         print(normalised_text)
 
