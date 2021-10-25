@@ -20,6 +20,9 @@ Alternatively there is a webapp that can be found at https://www.garg.ed.ac.uk/a
 
 ## Acknowledgements 
 
+### Supervision 
+The development of An Gocair was supervised by Dr Beatrice Alex whose contributions notably enabled the evaluation of the tool as well as guiding and supporting the research into text normalisation. 
+
 ### Scottish Gaelic Lexicon
 
 The lexicon file is provided by Michael Bauer, author and lead collaborator on the Am Faclair Beag Scottish Gaelic dictionary. The lexicon is a reformatted version of the dictionary that makes use of Michael's extensive labelling of traditional Gaelic spellings and common misspellings. The resource is extremely vital for the success of the memory based approach. 
